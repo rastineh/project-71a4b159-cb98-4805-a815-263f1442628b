@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Vazirmatn', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +49,14 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        status: {
+          pending: "hsl(var(--status-pending))",
+          approved: "hsl(var(--status-approved))",
+          referred: "hsl(var(--status-referred))",
+          answered: "hsl(var(--status-answered))",
+          closed: "hsl(var(--status-closed))",
+          rejected: "hsl(var(--status-rejected))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
