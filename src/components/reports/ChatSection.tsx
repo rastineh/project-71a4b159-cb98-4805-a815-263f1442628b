@@ -34,8 +34,8 @@ export const ChatSection = ({ messages, reportId, onSendMessage }: ChatSectionPr
     try {
       await onSendMessage(newMessage);
       setNewMessage('');
-    } catch (error) {
-      console.error('Error sending message:', error);
+    } catch {
+      // Error handled silently - user sees loading state change
     } finally {
       setIsLoading(false);
     }

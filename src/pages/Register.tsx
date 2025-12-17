@@ -223,9 +223,12 @@ export default function Register() {
           </CardContent>
         </Card>
 
-        <p className="text-xs text-center text-muted-foreground mt-4">
-          برای تست از کد ۱۲۳۴۵۶ استفاده کنید
-        </p>
+        {/* TODO: Remove in production - Test OTP hint */}
+        {import.meta.env.DEV && (
+          <p className="text-xs text-center text-muted-foreground mt-4">
+            برای تست از کد ۱۲۳۴۵۶ استفاده کنید
+          </p>
+        )}
       </div>
     </div>
   );
